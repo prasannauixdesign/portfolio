@@ -1,0 +1,501 @@
+/* FONT FACE AVANTGARDE_DEMI */
+@font-face {
+  font-family: "AvantGarde";
+  src: url("./ASSETS/Fonts/Avant_Garde_Demi.otf");
+}
+
+/* FONT FACE PROXIMANOVA */
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./ASSETS/Fonts/Proxima_Nova_SemiBold.ttf");
+}
+
+/* BODY SECTION STYLING */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  color: #b7ab98;
+  font-family: "AvantGarde", sans-serif;
+}
+/* CUROSOR ANIMATION STYLING */
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: -25px;
+  margin-top: -10px;
+  background-color: #eb5939;
+  transition: transform 0.2s ease;
+  pointer-events: none;
+  z-index: 1000;
+}
+#disableCursor {
+  cursor: pointer;
+  opacity: 0;
+  /* Add other cursor animation styles as needed */
+}
+
+/* NAVBAR MENU STYLING */
+nav {
+  margin: 20px 40px;
+}
+
+.navbar .navbar-brand {
+  width: 40;
+}
+
+.navbar-nav {
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav li {
+  margin: -10px 0;
+  font-weight: 700;
+}
+
+.navbar-nav li a {
+  font-size: 12px;
+  line-height: 15.6px;
+  font-family: "AvantGarde", sans-serif;
+  font-weight: 700;
+  text-align: right;
+  color: #80796d;
+  padding: -25px 0;
+}
+
+.navbar-nav li a:hover {
+  color: #b7ab98;
+}
+
+/* HEADER SECTION STYLING */
+header {
+  position: relative;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Adjust the alpha value for the desired transparency */
+  z-index: 1; /* Place the overlay on top of the video */
+  backdrop-filter: blur(8px);
+}
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 110%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.social-connect {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  top: 60%;
+  left: 5%;
+  z-index: 1000;
+}
+
+.social-connect img {
+  width: 20px;
+  height: 20px;
+  margin: 12px 0;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjust the overlay background color and opacity */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.content .hero-name {
+  font-family: "AvantGarde";
+  font-size: 12px;
+  line-height: 16.4px;
+  letter-spacing: 5.5px;
+  color: #b7ab98;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.content .hero-desc {
+  position: relative;
+  font-family: "AvantGarde";
+  font-size: 85px;
+  line-height: 80px;
+  letter-spacing: -5.5px;
+  color: #b7ab98;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* END OF HEADER SECTION STYLING */
+
+/* ABOUT SECTION STYLING */
+#About {
+  position: relative;
+  top: 120px;
+  left: 232px;
+  max-width: 920px;
+}
+.about-content .about-name {
+  font-family: "AvantGarde", sans-serif;
+  font-size: 14px;
+  line-height: 25.4px;
+  letter-spacing: 5.5px;
+  color: #b7ab98;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about-content .about-desc {
+  font-family: "AvantGarde", sans-serif;
+  font-size: 54px;
+  line-height: 54.2px;
+  letter-spacing: -2.5px;
+  /* color: #B7AB98; */
+  font-weight: 700;
+  transition: color 0.5s ease;
+}
+
+/* END OF ABOUT SECTION ELEMENT */
+/* WHAT I DO SECTION */
+#what-i-do {
+  position: relative;
+  top: 290px;
+  left: -15px;
+  width: 100%;
+}
+
+#what-i-do .about-name {
+  font-family: "AvantGarde", sans-serif;
+  font-size: 14px;
+  line-height: 25.4px;
+  letter-spacing: 5.5px;
+  color: #b7ab98;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 242px;
+}
+
+#what-i-do ul li {
+  list-style: none;
+  font-family: "AvantGarde", sans-serif;
+  font-size: 93px;
+  line-height: 54.2px;
+  letter-spacing: -2.5px;
+  /* color: #B7AB98; */
+  font-weight: 700;
+  margin-left: 202px;
+  padding: 5px 0;
+}
+
+/* WORKS SECTION STYLING */
+
+#works {
+  position: relative;
+  top: 490px;
+  left: 242px;
+  max-width: 920px;
+}
+
+.work-content .work-name {
+  font-family: "AvantGarde";
+  font-size: 12px;
+  line-height: 16.4px;
+  letter-spacing: 5.5px;
+  color: #b7ab98;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.work-content .work-desc {
+  font-family: "AvantGarde";
+  font-size: 54px;
+  line-height: 63.2px;
+  letter-spacing: -2.5px;
+  color: #b7ab98;
+  font-weight: 700;
+}
+
+.work-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid #b7ab98;
+  background-color: transparent;
+  color: #b7ab98;
+  margin: 0px 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.work-btn:hover {
+  background-color: #eb5939;
+  color: #0d0d0d;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* PROJECT LIST STYLING */
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  top: 600px;
+  left: 0px;
+}
+
+.image-container {
+  position: relative;
+  flex: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.image-container img:hover {
+  transform: scale(1.5);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+  font-family: "AvantGarde";
+  font-size: 28px;
+  line-height: 45.4px;
+  letter-spacing: 2.5px;
+  color: #b7ab98;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.image-container:hover img {
+  transform: scale(1.1);
+}
+.overlay-text {
+  text-align: center;
+}
+
+/* UI DESIGN STYLING */
+#uidesign {
+  position: relative;
+  top: 820px;
+  left: 242px;
+  max-width: 920px;
+}
+
+#carouselExampleIndicators {
+  position: absolute;
+  top: 425px;
+  left: 230px;
+}
+
+.animated-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease, transform 1s ease;
+}
+
+.animated-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#my-motto {
+  position: relative;
+  top: 980px;
+  left: 0px;
+  max-width: 100%;
+  width: 100%;
+  height: 70vh;
+  background: #242424;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "AvantGrande", sans-serif;
+}
+
+#my-motto p {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "AvantGarde";
+  color: #b7ab98;
+}
+#my-motto h1 {
+  font-family: "AvantGarde";
+  font-size: 54px;
+  line-height: 63.2px;
+  letter-spacing: -2.5px;
+  color: #b7ab98;
+}
+/* FOOTER SECTION STYLING */
+#footer {
+  position: absolute;
+  top: 5080px;
+  left: 5%;
+  max-width: 100%;
+  margin-bottom: 64px;
+}
+
+#footer .about-name {
+  font-family: "AvantGarde";
+  font-size: 12px;
+  line-height: 16.4px;
+  letter-spacing: 5.5px;
+  color: #b7ab98;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#footer .about-desc {
+  font-family: "AvantGarde";
+  font-size: 38px;
+  line-height: 36.2px;
+  letter-spacing: -2.5px;
+  color: #b7ab98;
+  font-weight: 700;
+}
+
+#footer li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+#footer li a {
+  font-family: "AvantGarde", sans-serif;
+  text-decoration: none;
+  font-size: 38px;
+  line-height: 42.2px;
+  letter-spacing: -2.5px;
+  color: #b7ab98;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+#footer li a:hover {
+  width: 220px;
+  height: 40px;
+  background-color: #eb5939;
+  padding: 0px 3px;
+}
+.connect {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.links {
+  position: absolute;
+  top: 0;
+  left: 480px;
+}
+
+.contact-info {
+  position: absolute;
+  top: 20px;
+  left: 850px;
+}
+
+.email-head {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: "AvantGarde", sans-serif;
+  letter-spacing: 1.5px;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: "AvantGarde", sans-serif;
+  letter-spacing: 1.5px;
+  margin: 5px 0;
+  color: #80796d;
+}
+
+.contact {
+  position: absolute;
+  top: 50px;
+  max-width: 450px;
+}
+
+.contact-head {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: "AvantGarde", sans-serif;
+  letter-spacing: 1.5px;
+  margin: 0 0;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: "AvantGarde", sans-serif;
+  letter-spacing: 1.5px;
+  margin: 5px 0;
+  color: #80796d;
+  width: 100%;
+}
